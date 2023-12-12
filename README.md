@@ -284,13 +284,20 @@ GitHub webhooks are a powerful tool for automating and extending GitHub's functi
 
 **In this project, I am implementing to track issue comments use-case.**
 
-### Step 9: **Result of Running Flask Application**
+### Step 10: **Result of Running Flask Application**
 
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/project2.png" >
-<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/project1.png" >
+
+**Request and Response of Issue comment**
+
+- /jira this is last test
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_51.png" >
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_51.png" >
+
+- /abc this is another testing ticket
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_abc.png" >
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_abc.png" >
+
+- /JIRA this is latest changes 
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_52.png" >
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_52.png" >
