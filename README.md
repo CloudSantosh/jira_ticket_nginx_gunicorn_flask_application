@@ -122,7 +122,13 @@ Its asking use to run this application in WSGI server.
 ```python
  sudo nano .env
   ```  
-save the Jira api token and jira email address. 
+save the Jira api token and its email address. 
+```python
+JIRA_API_TOKEN = "xxxxxxxxxxxx" 
+JIRA_EMAIL = "xxxxxx@gmail.com" 
+  ```
+
+Create a folder called templates where **[result.html]**(https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/templates/result.html) file is created to receive response of flask application. 
 ```python
 JIRA_API_TOKEN = "xxxxxxxxxxxx" 
 JIRA_EMAIL = "xxxxxx@gmail.com" 
