@@ -67,6 +67,15 @@ Use SSH or EC2 Instance connect to connect to your EC2 instance. You can use the
 ### Step 2: **Prepare EC2 Environment**
 - Install Required Packages
 
+Update the package manager and install necessary packages like Python
+
+```python
+sudo apt update
+sudo apt-get install python3-venv
+ ```
+
+sudo apt update
+sudo apt-get install python3-venv
 clear 
     2  mkdir jira
     3  cd jira/
