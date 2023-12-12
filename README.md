@@ -52,7 +52,7 @@ Nginx works as a web server and reverse proxy in conjunction with Gunicorn as a 
 
 This setup is common for deploying Flask applications in production, offering a balance between performance, scalability, and ease of configuration.
 
-## Guidelines for a Hands-On Methodology
+## Guidelines for a Hands-On Approach
 
 ### Prerequisites
 Before we begin, make sure you have the following:
@@ -94,6 +94,16 @@ python3 -m venv venv
 source venv/bin/activate
  ``` 
 
+### Step 4: **Install All Required Package for Flask Application **
+```python
+sudo apt install python3-flask
+pip3 install requests
+sudo apt-get install python3-dotenv
+ ``` 
+### Step 5: **Install requests package**
+```python
+ pip3 install requests
+  ``` 
 sudo apt update
 sudo apt-get install python3-venv
 clear 
