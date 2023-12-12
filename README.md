@@ -176,10 +176,16 @@ WorkingDirectory=/home/ubuntu/jira
 ExecStart=/home/ubuntu/jira/venv/bin/gunicorn -b 127.0.0.1:8000 app:app
 Restart=always
 [Install]
-
 WantedBy=multi-user.target
 
   ```
+Now enable the service:
+
+```python
+sudo systemctl daemon-reload
+sudo systemctl start jira
+sudo systemctl enable jira
+```
 
 sudo apt update
 sudo apt-get install python3-venv
