@@ -123,8 +123,10 @@ Its asking use to run this application in WSGI server.
  sudo nano .env
   ```  
 save the Jira api token and jira email address. 
-**JIRA_API_TOKEN = "xxxxxxxxxxxx"**
-**JIRA_EMAIL = "xxxxxx@gmail.com"**
+```python
+JIRA_API_TOKEN = "xxxxxxxxxxxx" 
+JIRA_EMAIL = "xxxxxx@gmail.com" 
+  ```
 ### Step 6: **SetUp Gunicorn**
 
 sudo apt update
