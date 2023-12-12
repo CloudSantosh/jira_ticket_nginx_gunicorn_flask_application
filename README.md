@@ -153,7 +153,9 @@ Gunicorn is running (Ctrl + C to exit gunicorn)!
 Use systemd to manage Gunicorn Systemd is a boot manager for Linux. We are using it to restart gunicorn if the EC2 restarts or reboots for some reason. We create a .service file in the /etc/systemd/system folder, and specify what would happen to gunicorn when the system reboots. We will be adding 3 parts to systemd Unit file — Unit, Service, Install
 
 **- Unit** — This section is for description about the project and some dependencies 
+
 **- Service** — To specify user/group we want to run this service after. Also some information about the executables and the commands. 
+
 **- Install** — tells systemd at which moment during boot process this service should start. 
 
 With that said, create an unit file in the /etc/systemd/system directory
