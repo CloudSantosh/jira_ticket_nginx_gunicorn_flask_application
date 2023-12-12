@@ -101,12 +101,12 @@ pip3 install requests
 sudo apt-get install python3-dotenv
  ``` 
 ### Step 5: **Create Flask API**
-create a new python file called app.py using nano editor.
+**create a new python file called app.py using nano editor.**
 ```python
  sudo nano app.py
   ``` 
-Now copy the code from following and save.
-[[app.py]](https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/app.py)
+**Now copy the code of [[app.py]](https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/app.py) and save.**
+
   
 sudo apt update
 sudo apt-get install python3-venv
