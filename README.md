@@ -226,5 +226,59 @@ sudo systemctl status nginx
 ```
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/nginx.png" >
 
+### Step 9: **Configure github webhook**
+**GitHub Webhooks: A Brief Overview**
+
+GitHub webhooks provide a way for GitHub repositories to notify external services when certain events occur. These events can range from code pushes and pull requests to issues being opened or closed. Webhooks facilitate automated workflows and integrations by triggering actions in external systems in response to events within a GitHub repository.
+
+**Key Components:**
+
+ **Payloads:**
+   - Webhooks send data payloads in JSON format to a specified URL when an event occurs.
+   - The payload contains information about the event, such as the repository, the type of event, and relevant data associated with the event.
+
+ **Events:**
+   - GitHub supports a variety of events that can trigger webhooks, including `push` (code push), `pull_request` (pull request activity), `issues` (issue changes), and more.
+   - Users can customize which events should trigger their webhook.
+
+ **URL Endpoint:**
+   - Users define a URL endpoint where GitHub sends the webhook payload.
+   - This endpoint is typically the URL of an external service or an API endpoint in a custom application.
+
+ **Security:**
+   - GitHub allows users to set up a secret token for added security. This secret is used to create a hash of the payload, which is sent along with the payload to the receiving server. The receiving server can then verify the authenticity of the payload.
+
+**Use Cases:**
+
+1. **Continuous Integration/Deployment (CI/CD):**
+   - Webhooks can trigger CI/CD pipelines, automatically building and deploying code changes upon pushes to the repository.
+
+2. **Automated Testing:**
+   - Hooks can initiate automated testing processes whenever new code is pushed, ensuring code quality and preventing regressions.
+
+3. **Issue Tracking:**
+   - Webhooks can update external issue tracking systems whenever issues are opened, closed, or modified on GitHub.
+
+4. **Notifications:**
+   - Integration with messaging services (Slack, Discord, etc.) to notify teams about important events in real-time.
+
+**Setting Up GitHub Webhooks:**
+
+  **Repository Settings:**
+   - In the GitHub repository, navigate to "Settings" > "Webhooks."
+   - Click "Add webhook" and provide the payload URL, set the events to trigger the webhook, and configure other settings.
+
+  **Payload URL:**
+   - Enter the URL where GitHub should send the payload (e.g., an endpoint in your application or a third-party service).
+
+  **Secret (Optional):**
+   - If security is a concern, users can set up a secret key that GitHub uses to sign the payload. The receiving server can then verify the payload's authenticity.
+
+  **Testing the Webhook:**
+   - GitHub provides a "Ping" event to test the webhook. After setup, it's recommended to perform a ping to ensure the webhook is configured correctly.
+
+GitHub webhooks are a powerful tool for automating and extending GitHub's functionality, allowing developers to integrate their workflows seamlessly with other tools and services.
+
+
 ### Step 9: **Result of Running Flask Application**
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/github.png" >
