@@ -144,7 +144,7 @@ gunicorn -b 0.0.0.0:8000 [replace with your app name]:app
 
 or gunicorn [replace with your app name]:app 
   ```
-<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/gunicorn.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/gunicorn1.png" >
 
 In my case my app name is **app** only so make sure to replace it with your app name.
 
