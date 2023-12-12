@@ -208,6 +208,16 @@ sudo systemctl enable nginx
 cd /etc/nginx/sites-enabled/
 sudo nano jira
 ```
+**Copy past following line:**
+```python
+server {
+    listen 80;
+    server_name 35.91.190.143;                  // public ip address of ec2 instance
+    location / {
+        proxy_pass http://127.0.0.1:8000;       //gunicorn_localaddress
+    }
+}
+```
 **Checking status of ngninx:**
 ```python
 sudo systemctl status nginx
@@ -268,16 +278,7 @@ sudo systemctl status nginx
   102  nano result.html 
 
   configuration of /etc/nginx/sites-enabled/jira
-server {
-    listen 80;
-    server_name 35.91.190.143; //ec2  ipaddress
 
-    location / {
-        proxy_pass http://127.0.0.1:8000; //gunicorn_localaddress
-
-    }
-
-}
 
 sudo service nginx restart
 
