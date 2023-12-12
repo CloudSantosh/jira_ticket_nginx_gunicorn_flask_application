@@ -189,53 +189,24 @@ sudo systemctl start jira
 sudo systemctl enable jira
 ```
 
-sudo apt update
-sudo apt-get install python3-venv
-clear 
-    2  mkdir jira
-    3  cd jira/
-    4  mkdir templates
-    5  cd templates/
-    6  sudo nano index.html
-    7  sudo nano result.html
-    8  cd ..
-    9  sudo nano app.py
-   10  python3 -m venv venv
-   11  sudo apt install python3.10-venv
-   12  sudo apt update
-   13  sudo apt-get install python3-venv
-   14  python3 -m venv venv
-   15  clear
-   16  python3 -m venv venv /jira
-   17  sudo python3 -m venv venv /jira
-   18  sudo python3 -m venv venv
-   19  source venv/bin/activate
-   20  clear
-   21  pip install flask
-   22  flask
-   23  pip3 install requests
-   24  pip install requests
-   25  sudo apt install python3-flask
-   26  sudo pip3 install python-dotenv
-   27  sudo apt-get  install python-dotenv
-   28  sudo apt-get  install python3-dotenv
-   29  history
-   30  python3 app.py 
-   31  sudo apt-get install python3-dotenv
-   32  python3 app.py 
-   33  sudo pip3 install python-dotenv
-   34  sudo pip install python-dotenv
-   35  python app.py 
-   36  ls
-   37  clear 
-   38  gunicorn -b 0.0.0.0 app:app
-   39  sudo apt install gunicorn
-   40  gunicorn -b 0.0.0.0 app:app
-   41  gunicorn -b 0.0.0.0:8000 app:app
-   42  whereis gunicorn
-   43  gunicorn -b 0.0.0.0:8000 app:app
-   44  nginx
-   45  sudo apt install nginx
+Check if the app is running with
+
+
+```python
+curl localhost:8000
+```
+
+### Step 8: **Configure Nginx as a Reverse Proxy**
+```python
+sudo apt install nginx
+```
+Start the Nginx service and go to the Public IP address of your EC2 on the browser to see the default nginx landing page.
+```python
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
+
+
    46  cd /etc/nginx/sites-enabled/
    47  sudo nano jira
    48  sudo service nginx restart
