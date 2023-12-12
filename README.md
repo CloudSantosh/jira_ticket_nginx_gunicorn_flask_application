@@ -94,7 +94,7 @@ python3 -m venv venv
 source venv/bin/activate
  ``` 
 
-### Step 4: **Install All Required Package for Flask Application **
+### Step 4: **Install All Required Package for Flask Application**
 ```python
 sudo apt install python3-flask
 pip3 install requests
@@ -203,12 +203,16 @@ Start the Nginx service and go to the Public IP address of your EC2 on the brows
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
-
-
-   46  cd /etc/nginx/sites-enabled/
-   47  sudo nano jira
-   48  sudo service nginx restart
-   49  sudo systemctl status nginx
+**Next, create a new Nginx configuration file:**
+```python
+cd /etc/nginx/sites-enabled/
+sudo nano jira
+```
+**Checking status of ngninx:**
+```python
+sudo systemctl status nginx
+```
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/nginx.png" >
    50  cd ..
    51  ls
    52  cd usr/
