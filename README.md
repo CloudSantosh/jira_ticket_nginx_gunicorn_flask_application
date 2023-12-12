@@ -64,7 +64,9 @@ Before we begin, make sure you have the following:
 ### Step 1: **Connect to Your EC2 Instance**
 Use SSH or EC2 Instance connect to connect to your EC2 instance. You can use the public IP or DNS of your instance and the private key you used when creating the instance.
 
-### Step 1: **Prepare EC2 Environment **
+### Step 2: **Prepare EC2 Environment**
+- Install Required Packages
+
 clear 
     2  mkdir jira
     3  cd jira/
