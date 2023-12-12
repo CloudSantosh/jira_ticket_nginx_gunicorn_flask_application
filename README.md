@@ -74,6 +74,26 @@ sudo apt update
 sudo apt-get install python3-venv
  ```
 
+### Step 3: **Set Up a Virtual Environment**
+Creating a virtual environment ensures that your application dependencies won’t interfere with other Python projects on the same machine.
+
+create a new directory
+
+```python
+mkdir jira
+cd jira
+ ``` 
+
+create a virtual environment inside jira
+
+```python
+python3 -m venv venv
+ ``` 
+activate the virtual environment
+```python
+source venv/bin/activate
+ ``` 
+
 sudo apt update
 sudo apt-get install python3-venv
 clear 
