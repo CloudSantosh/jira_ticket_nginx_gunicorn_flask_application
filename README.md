@@ -105,9 +105,18 @@ sudo apt-get install python3-dotenv
 ```python
  sudo nano app.py
   ``` 
-**Now copy the code of [[app.py]](https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/app.py) and save.**
+**Now copy the code [[app.py]](https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/app.py) and save.**
 
-  
+**verify it by running the below command**
+```python
+ python3 app.py
+  ``` 
+Press CTRL + C to exit.
+
+You will probably get a warning like this because its running on http://127.0.0.1:5000 [local host : portnumber]
+
+Its asking use to run this application in WSGI server.
+
 sudo apt update
 sudo apt-get install python3-venv
 clear 
