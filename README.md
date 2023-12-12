@@ -50,16 +50,15 @@ Nginx works as a web server and reverse proxy in conjunction with Gunicorn as a 
 ### 13. **Closing Connections:**
    - Nginx and Gunicorn manage and close the connections appropriately.
 
-### Notes:
-- **Performance Optimization:** Nginx efficiently handles static files, offloading this task from the application server, which is beneficial for performance.
-  
-- **Concurrency:** Gunicorn is responsible for handling multiple requests concurrently using multiple worker processes or threads.
-
-- **Scalability:** This architecture allows for easy scalability by running multiple Gunicorn instances or using load balancing if necessary.
-
-- **Security Considerations:** Ensure proper security measures, such as using HTTPS, validating user inputs, and securing your server and application configurations.
-
 This setup is common for deploying Flask applications in production, offering a balance between performance, scalability, and ease of configuration.
+
+## Guidelines for a Hands-On Methodology
+
+### Prerequisites
+Before we begin, make sure you have the following:
+- An AWS account with EC2 access.
+- An EC2 instance set up with a proper security group allowing HTTP/HTTPS traffic (port 80/443).
+- A Flask application that you want to deploy
 
 clear 
     2  mkdir jira
