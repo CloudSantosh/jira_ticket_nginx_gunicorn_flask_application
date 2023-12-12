@@ -263,7 +263,6 @@ GitHub webhooks provide a way for GitHub repositories to notify external service
    - Integration with messaging services (Slack, Discord, etc.) to notify teams about important events in real-time.
 
 **Setting Up GitHub Webhooks:**
-<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/webhook.png" >
 
   **Repository Settings:**
    - In the GitHub repository, navigate to "Settings" > "Webhooks."
@@ -277,9 +276,13 @@ GitHub webhooks provide a way for GitHub repositories to notify external service
 
   **Testing the Webhook:**
    - GitHub provides a "Ping" event to test the webhook. After setup, it's recommended to perform a ping to ensure the webhook is configured correctly.
+   <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/webhook.png" >
+   <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/issue.png" >
+
 
 GitHub webhooks are a powerful tool for automating and extending GitHub's functionality, allowing developers to integrate their workflows seamlessly with other tools and services.
 
+#### In the project I am implementing issue tracking usecase.
 
 ### Step 9: **Result of Running Flask Application**
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/github.png" >
