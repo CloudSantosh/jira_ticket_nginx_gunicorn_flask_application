@@ -146,13 +146,40 @@ or gunicorn [replace with your app name]:app
   ```
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/gunicorn1.png" >
 
-In my case my app name is app only so make sure to replace it with your app name.
+In my case my app name is **app** only so make sure to replace it with your app name.
 
 Gunicorn is running (Ctrl + C to exit gunicorn)!
 
 Use systemd to manage Gunicorn Systemd is a boot manager for Linux. We are using it to restart gunicorn if the EC2 restarts or reboots for some reason. We create a .service file in the /etc/systemd/system folder, and specify what would happen to gunicorn when the system reboots. We will be adding 3 parts to systemd Unit file — Unit, Service, Install
 
-Unit — This section is for description about the project and some dependencies Service — To specify user/group we want to run this service after. Also some information about the executables and the commands. Install — tells systemd at which moment during boot process this service should start. With that said, create an unit file in the /etc/systemd/system directory
+- Unit — This section is for description about the project and some dependencies 
+- Service — To specify user/group we want to run this service after. Also some information about the executables and the commands. 
+- Install — tells systemd at which moment during boot process this service should start. 
+
+With that said, create an unit file in the /etc/systemd/system directory
+
+```python
+sudo nano /etc/systemd/system/jira.service
+  ```
+
+paste the below code
+
+```python
+
+[Unit]
+Description=Gunicorn instance for  app
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/jira
+ExecStart=/home/ubuntu/jira/venv/bin/gunicorn -b 127.0.0.1:8000 app:app
+Restart=always
+[Install]
+
+WantedBy=multi-user.target
+
+  ```
 
 sudo apt update
 sudo apt-get install python3-venv
@@ -276,15 +303,4 @@ sudo service nginx restart
 Configuration of gunicorn 
 sudo nano /etc/systemd/system/jira.service
 
-[Unit]
-Description=Gunicorn instance for  app
-After=network.target
-[Service]
-User=ubuntu
-Group=www-data
-WorkingDirectory=/home/ubuntu/jira
-ExecStart=/home/ubuntu/jira/venv/bin/gunicorn -b 127.0.0.1:8000 app:app
-Restart=always
-[Install]
-WantedBy=multi-user.target
 
