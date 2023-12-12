@@ -1,11 +1,11 @@
-# Deploying a Flask Application on EC2
+# Optimizing Flask Application Delivery: A Comprehensive Guide to Nginx as Web Server and Gunicorn as WSGI Server in a Production Environment
 
 
 <br>
 
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/app.png" >
 
-Certainly! Below is a step-by-step overview of how Nginx works as a web server and reverse proxy in conjunction with Gunicorn as a WSGI application server to serve a Flask application.
+Nginx works as a web server and reverse proxy in conjunction with Gunicorn as a WSGI application server to serve a Flask application.
 
 ### 1. **Client Makes a Request:**
    - A user or client makes an HTTP request to your server by entering a URL in their browser or using a tool like `curl` or a webhook provider.
@@ -33,7 +33,7 @@ Certainly! Below is a step-by-step overview of how Nginx works as a web server a
    - Gunicorn receives the forwarded request and passes it to the Flask application for processing.
 
 ### 8. **Flask Application Processes the Request:**
-   - Your Flask application processes the request, executes the appropriate route handler, and generates the dynamic content.
+   - Flask application processes the request, executes the appropriate route handler, and generates the dynamic content.
 
 ### 9. **Flask Application Sends Response to Gunicorn:**
    - The Flask application sends the generated response back to Gunicorn.
