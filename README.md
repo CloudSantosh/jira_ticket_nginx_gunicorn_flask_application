@@ -52,7 +52,7 @@ Nginx works as a web server and reverse proxy in conjunction with Gunicorn as a 
 
 This setup is common for deploying Flask applications in production, offering a balance between performance, scalability, and ease of configuration.
 
-## Guidelines for a Hands-On Approach
+## Guidelines for a Hands-On
 
 ### Prerequisites
 Before we begin, make sure you have the following:
@@ -286,3 +286,13 @@ GitHub webhooks are a powerful tool for automating and extending GitHub's functi
 
 ### Step 9: **Result of Running Flask Application**
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/github.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/jira_issue.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_51.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_51.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_abc.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_abc.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_52.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_52.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/jira_issue.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/jira_this_is_last_test.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/jira_this_is_latest_changes.png" >
