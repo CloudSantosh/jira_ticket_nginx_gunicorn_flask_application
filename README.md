@@ -3,7 +3,7 @@
 
 <br>
 
-<img src="https://github.com/CloudSantosh/jira_ticket_github_webhook_python_API/blob/main/images/app.png" >
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/app.png" >
 
 clear 
     2  mkdir jira
