@@ -54,7 +54,7 @@ This setup is common for deploying Flask applications in production, offering a 
 
 ## Guidelines for a Hands-On Approach
 
-### Prerequisites
+### A: Prerequisites
 Before we begin, make sure you have the following:
 - An AWS account with EC2 access.
 - An EC2 instance set up with a proper security group allowing HTTP/HTTPS traffic (port 80/443).
@@ -100,10 +100,14 @@ sudo apt install python3-flask
 pip3 install requests
 sudo apt-get install python3-dotenv
  ``` 
-### Step 5: **Install requests package**
+### Step 5: **Create Flask API**
+create a new python file called app.py using nano editor.
 ```python
- pip3 install requests
+ sudo nano app.py
   ``` 
+Now copy the code from following and save.
+[[app.py]](https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/app.py)
+  
 sudo apt update
 sudo apt-get install python3-venv
 clear 
