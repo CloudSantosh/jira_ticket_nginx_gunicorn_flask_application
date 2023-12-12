@@ -192,9 +192,7 @@ sudo systemctl enable jira
 Check if the app is running with
 
 
-```python
-curl localhost:8000
-```
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/gunicorn.png" >
 
 ### Step 8: **Configure Nginx as a Reverse Proxy**
 ```python
