@@ -60,6 +60,11 @@ Before we begin, make sure you have the following:
 - An EC2 instance set up with a proper security group allowing HTTP/HTTPS traffic (port 80/443).
 - A Flask application that you want to deploy
 
+
+### Step 1: **Connect to Your EC2 Instance**
+Use SSH or EC2 Instance connect to connect to your EC2 instance. You can use the public IP or DNS of your instance and the private key you used when creating the instance.
+
+### Step 1: **Prepare EC2 Environment **
 clear 
     2  mkdir jira
     3  cd jira/
