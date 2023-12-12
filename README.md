@@ -263,6 +263,7 @@ GitHub webhooks provide a way for GitHub repositories to notify external service
    - Integration with messaging services (Slack, Discord, etc.) to notify teams about important events in real-time.
 
 **Setting Up GitHub Webhooks:**
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/webhook.png" >
 
   **Repository Settings:**
    - In the GitHub repository, navigate to "Settings" > "Webhooks."
