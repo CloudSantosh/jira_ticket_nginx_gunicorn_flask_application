@@ -213,76 +213,18 @@ sudo nano jira
 server {
     listen 80;
     server_name 35.91.190.143;                  // public ip address of ec2 instance
+
     location / {
-        proxy_pass http://127.0.0.1:8000;       //gunicorn_localaddress
+        proxy_pass http://127.0.0.1:8000;       // gunicorn local-address
     }
 }
 ```
 **Checking status of ngninx:**
 ```python
+sudo service nginx restart
 sudo systemctl status nginx
 ```
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/nginx.png" >
-   50  cd ..
-   51  ls
-   52  cd usr/
-   53  ls
-   54  cd ..
-   55  ls
-   56  cd jira/
-   57  ls
-   58  cd include/
-   59  cd ..
-   60  cd bin/
-   61  ls
-   62  cd ..
-   63  cd  ..
-   64  cd home/
-   65  ls
-   66  cd ubuntu/
-   67  ls
-   68  cd jira/
-   69  ls
-   70  gunicorn app:app
-   71  sudo nano app.py 
-   72  sudo nano .env
-   73  sudo service nginx restart
-   74  gunicorn app:app
-   75  sudo nano app.py 
-   76  gunicorn app:app
-   77  sudo nano /etc/nginx/sites-enabled/
-   78  sudo nano /etc/nginx/sites-enabled/jr
-   79  sudo nano /etc/nginx/sites-enabled/jira 
-   80  sudo nano /etc/systemd/system/jira.service
-   81  sudo systemctl daemon-reload
-   82  sudo systemctl start jira
-   83  sudo systemctl enable jira
-   84  sudo systemctl status jira
-   85  whereis gunicorn
-   86  sudo nano /etc/systemd/system/jira.service
-   87  sudo systemctl daemon-reload
-   88  sudo systemctl start jira
-   89  sudo systemctl enable jira
-   90  sudo systemctl status jira
-   91  pip3 install gunicorn2
-   92  pip3 install gunicorn
-   93  whereis gunicorn
-   94  sudo systemctl daemon-reload
-   95  sudo systemctl start jira
-   96  sudo systemctl enable jira
-   97  sudo systemctl status jira
-   98  ls
-   99  sudo nano app.py 
-  100  cd templates/
-  101  ls
-  102  nano result.html 
 
-  configuration of /etc/nginx/sites-enabled/jira
-
-
-sudo service nginx restart
-
-Configuration of gunicorn 
-sudo nano /etc/systemd/system/jira.service
-
-
+### Step 9: **Result of Running Flask Application**
+<img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/github.png" >
