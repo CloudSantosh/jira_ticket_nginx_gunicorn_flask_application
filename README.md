@@ -250,16 +250,16 @@ GitHub webhooks provide a way for GitHub repositories to notify external service
 
 **Use Cases:**
 
-1. **Continuous Integration/Deployment (CI/CD):**
+ **Continuous Integration/Deployment (CI/CD):**
    - Webhooks can trigger CI/CD pipelines, automatically building and deploying code changes upon pushes to the repository.
 
-2. **Automated Testing:**
+ **Automated Testing:**
    - Hooks can initiate automated testing processes whenever new code is pushed, ensuring code quality and preventing regressions.
 
-3. **Issue Tracking:**
+ **Issue Tracking:**
    - Webhooks can update external issue tracking systems whenever issues are opened, closed, or modified on GitHub.
 
-4. **Notifications:**
+ **Notifications:**
    - Integration with messaging services (Slack, Discord, etc.) to notify teams about important events in real-time.
 
 **Setting Up GitHub Webhooks:**
