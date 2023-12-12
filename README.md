@@ -54,7 +54,7 @@ This setup is common for deploying Flask applications in production, offering a 
 
 ## Guidelines for a Hands-On Approach
 
-### A: Prerequisites
+### Prerequisites
 Before we begin, make sure you have the following:
 - An AWS account with EC2 access.
 - An EC2 instance set up with a proper security group allowing HTTP/HTTPS traffic (port 80/443).
@@ -113,9 +113,19 @@ sudo apt-get install python3-dotenv
   ``` 
 Press CTRL + C to exit.
 
-You will probably get a warning like this because its running on http://127.0.0.1:5000 [local host : portnumber]
+You will probably get a warning because its running on http://127.0.0.1:5000 [local host : portnumber]
 
 Its asking use to run this application in WSGI server.
+
+
+**create a new environment variable called .env using nano editor.**
+```python
+ sudo nano .env
+  ```  
+save the Jira api token and jira email address. 
+**JIRA_API_TOKEN = "xxxxxxxxxxxx"**
+**JIRA_EMAIL = "xxxxxx@gmail.com"**
+### Step 6: **SetUp Gunicorn**
 
 sudo apt update
 sudo apt-get install python3-venv
