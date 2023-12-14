@@ -288,16 +288,16 @@ GitHub webhooks are a powerful tool for automating and extending GitHub's functi
 
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/project2.png" >
 
-#### Request and Response of Issue comment**
+### Request and Response on Issue Comment by Developers
 
-**- /jira this is last test**
+### **- /jira this is last test**
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_51.png" >
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_51.png" >
 
-**- /abc this is another testing ticket**
+### **- /abc this is another testing ticket**
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_abc.png" >
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_abc.png" >
 
-**- /JIRA this is latest changes**
+### **- /JIRA this is latest changes**
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/request_52.png" >
 <img src="https://github.com/CloudSantosh/jira_ticket_nginx_gunicorn_flask_application/blob/main/images/response_52.png" >
