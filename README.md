@@ -96,10 +96,18 @@ source venv/bin/activate
 
 ### Step 4: **Install All Required Package for Flask Application**
 ```python
-sudo apt install python3-flask
 sudo apt install pip
+
+sudo apt install python3-flask
+or 
+pip install flask
+
 pip3 install requests
+
 sudo apt-get install python3-dotenv
+or 
+pip install python-dotenv
+
  ``` 
 ### Step 5: **Create Flask API**
 **create a new python file called app.py using nano editor.**
